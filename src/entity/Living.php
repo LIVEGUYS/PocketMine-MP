@@ -593,7 +593,7 @@ abstract class Living extends Entity{
 			$motionY += $force;
 			$motionZ += $z * $f * $force;
 
-			$verticalLimit ??= $force;
+			$verticalLimit ??=3.0;
 			if($motionY > $verticalLimit){
 				$motionY = $verticalLimit;
 			}
